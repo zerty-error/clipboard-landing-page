@@ -306,6 +306,11 @@ footer .ajustement{
     padding: 30px 0 0 30px;
 }
 
+
+.challenge a{
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1224px){
     .computer img{
         height: 420px;
