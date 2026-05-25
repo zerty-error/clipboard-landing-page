@@ -6,10 +6,13 @@
 body {
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 18px;
+  height: 100vh;
+
 }
 header {
     background-image: url(images/bg-header-desktop.png);
     background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding: 6% 6% 6% 6%;
 }
@@ -59,13 +62,14 @@ header .blue {
 }
 
 .centre h3{
+    
     font-size:xx-large;
     color: hsl(210, 10%, 33%);
 }
 
 .centre p{
     color: hsl(201, 11%, 66%);
-    padding: 17px 22%;
+    padding: 17px 8%;
 }
 
 .computer {
@@ -76,6 +80,7 @@ header .blue {
 .computer img{
     margin-left: -70px;
     height: 560px;
+    width: 70%;
 }
 
 .liste {
@@ -96,9 +101,14 @@ header .blue {
 }
 
 .laptop{
+    
     text-align: center;
     padding: 5% 0% 2% 2%;
     margin: 40px 40px 20px 40px;
+}
+
+.laptop img{
+    height: 560px;
 }
 
 .laptop h2{
@@ -119,7 +129,7 @@ header .blue {
 }
 
 .entreprise_logo h2{
-    font-size:xx-large;
+    font-size:40px;
     color: hsl(210, 10%, 33%);
 }
 
@@ -141,13 +151,18 @@ header .blue {
 }
 
 .create h3{
-    font-size:xx-large;
+    font-size:x-large;
     color: hsl(210, 10%, 33%);
 }
 
 .create p{
-    padding: 17px 20px;
-    color: hsl(210, 10%, 33%);
+    padding: 17px 5px;
+    color: hsl(201, 11%, 66%);
+}
+
+.create img{
+    padding-bottom: 25px;
+    height: 40px;
 }
 
 .plain{
@@ -156,13 +171,24 @@ header .blue {
 }
 
 .plain h3{
-    font-size:xx-large;
+    font-size:x-large;
     color: hsl(210, 10%, 33%);
 }
 
 .plain p{
-    padding: 17px 20px;
+    padding: 17px 5px;
 }
+
+.plain img{
+    padding-bottom: 25px;
+    height: 40px;
+}
+
+.sneak img{
+    padding-bottom: 25px;
+    height: 40px;
+}
+
 
 .sneak{
     text-align: center;
@@ -170,19 +196,20 @@ header .blue {
 }
 
 .sneak h3{
-    font-size:xx-large;
+    font-size:x-large;
     color: hsl(210, 10%, 33%);
 }
 
 .sneak p{
     color: hsl(201, 11%, 66%);
-    padding: 4px 15px;
+    padding: 17px 5px;
 }
 
 .mark_logo {
     display: flex;
     justify-content: space-between;
     padding: 0 5% 5% 5%;
+    height: 37px;
 }
 
 
@@ -220,10 +247,17 @@ header .blue {
     color: aliceblue;
     background-color: hsl(233, 100%, 69%);
 }
-
 footer{
     background-color: rgba(128, 128, 128, 0.258);
-    padding: 8px 40px 0 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer  .attribution{
+    font-size: 0.6875rem;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.258);
+    padding: 18px 40px 0 40px;
 }
 
 footer #image{
@@ -231,11 +265,21 @@ footer #image{
     padding-top: 20px;
     padding-right: 20px;
 }
-
+footer .challenge{
+    font-size: 0.6875rem; text-align: center;
+}
+footer a{
+    color: hsl(228, 45%, 44%);
+    font-size: 0.6875rem;
+    text-align: center;
+    
+    
+}
 footer .ajustement{
     display: flex;
     justify-content: space-between;
     text-align: center;
+
 }
 
 .ajustement .bas ul{
@@ -244,6 +288,7 @@ footer .ajustement{
     gap: 80px;
     padding-top: 35px;
     padding-bottom: 20px;
+    
 }
 
 .ajustement .bas ul li a{
@@ -251,22 +296,613 @@ footer .ajustement{
     text-decoration: none;
 }
 
-.attribution {
-    height: 100px;
-}
+
 
 .ajustement .face{
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 25px;
     height: 25px;
-    padding: 30px 50px 30px 10px;
+    padding: 30px 0 0 30px;
+}
+
+@media screen and (max-width: 1224px){
+    .computer img{
+        height: 420px;
+    }
+    .computer .liste{
+        margin-top: 40px;
+    }
+    .laptop img{
+        height: 450px;
+    }
+    .liste{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 840px){
+    header p{
+        color: hsl(201, 11%, 66%);
+        padding: 4% 1% 4% 1%;
+    }
+
+    header img{
+        width: 100px;
+        height: 80px;
+    }
+
+    header a{
+        display: block;
+        font-size:large;
+        text-decoration: none;
+        margin: 1%;
+        padding: 2.2% 2%;
+        border-radius: 65px;
+        margin: 10% 15%;
+        
+    }
+    
+    header .green {
+        color: aliceblue;
+        background-color: hsl(171, 66%, 44%);
+        
+    }
+
+    header .blue {
+        color: aliceblue;
+        background-color: hsl(233, 100%, 69%);
+    }
+
+    .history{
+        padding: 5px;
+        margin: 0;
+    }
+
+    .history h1{
+        font-size: 42px;
+        padding: 10% 2% 5% 2%;
+        margin: 0;
+       
+    }
+    
+    
+    .liste{
+
+        padding-top: 0;
+    }
+   .bas{
+    display: block;
+   }
+
+   .computer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+   }
+    .computer img{
+        width: 70%;
+        height: 350px;
+        margin-left: 15%;
+    }
+    .computer .liste{
+        margin-top: 40px;
+    }
+
+    .laptop{
+        margin: 20px;
+    }
+    .laptop img{
+        height: 300px;
+        margin-left: 3px;
+        margin-right: 20px;
+    }
+
+    .logo{
+
+        display: flex;
+        flex-direction: column;
+    }
+    .mark_logo{
+        display: flex;
+        flex-direction: column;
+        height: 0%;
+        width: 70%;
+        padding-left: 60px;
+        
+    }
+    .mark_logo img{
+        width: 50%;
+       margin: 30px;
+       padding: 5% 30%;
+    }
+
+    .description h2{
+        font-size: 30px;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .description p{
+        color: hsl(201, 11%, 66%);
+        margin: 20px 30px 30px 20px;
+    }
+
+    .description a{
+        display: block;
+        font-size:large;
+        text-decoration: none;
+        margin: 1%;
+        padding: 2.2% 2%;
+        border-radius: 65px;
+        margin: 10% 15%;
+    }
+
+    .description .green {
+        margin: 8% 20% ;
+        color: aliceblue;
+        background-color: hsl(171, 66%, 44%);
+    }
+
+    .description .blue {
+        margin: 10% 20% ;
+        color: aliceblue;
+        background-color: hsl(233, 100%, 69%);
+    }
+
+
+   
+    footer .attribution{
+       display: block;
+        
+    }
+
+    footer .ajustement{
+        display: block;
+        padding: 20px;
+    }
+
+    .ajustement .bas ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 19px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    
+}
+
+    .ajustement .face {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    height: 25px;
+    padding: 30px 20% ;
+    }
 }
 
 
+@media screen and (max-width: 675px) {
+
+    header p{
+        color: hsl(201, 11%, 66%);
+        padding: 4% 1% 4% 1%;
+    }
+
+    header img{
+        width: 100px;
+        height: 80px;
+    }
+
+    header a{
+        display: block;
+        font-size:large;
+        text-decoration: none;
+        margin: 5%;
+        padding: 3.2% 4%;
+        border-radius: 65px;
+        margin: 20% 2%;
+        
+    }
+    
+    header .green {
+        margin: 7% 10%;
+        color: aliceblue;
+        background-color: hsl(171, 66%, 44%);
+        
+    }
+
+    header .blue {
+        margin: 6% 10%;
+        color: aliceblue;
+        background-color: hsl(233, 100%, 69%);
+    }
+
+    .history{
+        padding: 5px;
+        margin: 0;
+    }
+
+    .history h1{
+        font-size: 35px;
+        padding: 10% 2% 5% 2%;
+        margin: 0;
+       
+    }
+
+    .centre p{
+        color: hsl(201, 11%, 66%);
+        
+        
+    }
+
+    .computer {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    
+    }
+
+    .computer img{
+        padding: 0;
+        margin: 10%;
+        height: 390px;
+        width: 80%;
+    }
+
+    .liste {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .liste h2{
+      padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .liste p{
+        
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .laptop{
+    
+       padding: 0;
+       margin: 0;
+    }
+
+    .laptop img{
+        height: 250px;
+        margin-right: 0;
+        
+    }
+
+    .laptop h2{
+        
+        color: hsl(210, 10%, 33%);
+    }
+
+    .laptop p{
+        color: hsl(201, 11%, 66%);
+        
+    
+    }
+
+    .entreprise_logo{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .entreprise_logo h2{
+        font-size: 30px;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .entreprise_logo p{
+        
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+
+    .logo {
+        padding: 0 20px ;
+        display: block;
+        
+    }
+
+
+    .create h3{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .create p{
+        padding-bottom: 40px;
+        margin: 0;
+        color: hsl(201, 11%, 66%);
+    }
+
+    .create img{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
 
 
 
+    .sneak p{
+        color: hsl(201, 11%, 66%);
+        margin: 20px;
+        
+    }
+
+    .mark_logo {
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+        margin: 20px 17%;
+    }
+
+    .mark_logo img{
+        padding-left: 60px;
+        height: 30px;
+    }
 
 
+    .description h2{
+        font-size: 30px;
+        color: hsl(210, 10%, 33%);
+    }
 
+    .description p{
+        color: hsl(201, 11%, 66%);
+        margin: 20px 30px 30px 20px;
+    }
+
+    .description a{
+        display: block;
+        font-size:large;
+        text-decoration: none;
+        margin: 100px;
+        padding: 3.2% 4%;
+        border-radius: 65px;
+    }
+
+    .description .green {
+       margin: 70px 5px 50px 5px;
+        color: aliceblue;
+        background-color: hsl(171, 66%, 44%);
+    }
+
+    .description .blue {
+        margin: 20px 5px 20px 5px;
+        color: aliceblue;
+        background-color: hsl(233, 100%, 69%);
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    header p{
+        color: hsl(201, 11%, 66%);
+        padding: 4% 1% 4% 1%;
+    }
+
+    header img{
+        width: 100px;
+        height: 80px;
+    }
+
+    header a{
+        display: block;
+        font-size:large;
+        text-decoration: none;
+        margin: 1%;
+        padding: 3.2% 4%;
+        border-radius: 65px;
+        margin: 20% 2%;
+        
+    }
+    
+    header .green {
+        color: aliceblue;
+        background-color: hsl(171, 66%, 44%);
+        
+    }
+
+    header .blue {
+        color: aliceblue;
+        background-color: hsl(233, 100%, 69%);
+    }
+
+    .history{
+        padding: 5px;
+        margin: 0;
+    }
+
+    .history h1{
+        font-size: 35px;
+        padding: 10% 2% 5% 2%;
+        margin: 0;
+       
+    }
+
+    .centre p{
+        color: hsl(201, 11%, 66%);
+        
+        
+    }
+
+    .computer {
+       display: flex;
+       flex-direction: column;
+        padding: 0;
+        margin: 0;
+    
+    }
+
+    .computer img{
+        padding: 0;
+        margin: 10%;
+        height: 280px;
+        width: 80%;
+    }
+
+    .liste {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .liste h2{
+      padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .liste p{
+        
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+
+    .laptop{
+    
+       padding: 0;
+       margin: 0;
+    }
+
+    .laptop img{
+        height: 210px;
+        margin-right: 0;
+        
+    }
+
+    .laptop h2{
+        
+        color: hsl(210, 10%, 33%);
+    }
+
+    .laptop p{
+        color: hsl(201, 11%, 66%);
+        
+    
+    }
+
+    .entreprise_logo{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .entreprise_logo h2{
+        font-size: 30px;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .entreprise_logo p{
+        
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+
+    .logo {
+        padding: 0 20px ;
+        display: block;
+        
+    }
+
+
+    .create h3{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .create p{
+        padding-bottom: 40px;
+        margin: 0;
+        color: hsl(201, 11%, 66%);
+    }
+
+    .create img{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .plain{
+        padding-top: 60px;
+    }
+
+    .plain h3{
+        
+        color: hsl(210, 10%, 33%);
+    }
+
+    .sneak img{
+       padding-top: 60px;
+    }
+
+    .sneak h3{
+        
+        color: hsl(210, 10%, 33%);
+    }
+
+    .sneak p{
+        color: hsl(201, 11%, 66%);
+        margin: 20px;
+        
+    }
+
+    .mark_logo {
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+        margin: 20px;
+    }
+
+    .mark_logo img{
+        padding-left: 60px;
+        height: 30px;
+    }
+
+
+    .description h2{
+        font-size: 30px;
+        color: hsl(210, 10%, 33%);
+    }
+
+    .description p{
+        color: hsl(201, 11%, 66%);
+        margin: 20px 30px 30px 20px;
+    }
+
+    .description a{
+        display: block;
+        font-size:large;
+        text-decoration: none;
+        margin: 100px;
+        padding: 3.2% 4%;
+        border-radius: 65px;
+    }
+
+    .description .green {
+       margin: 70px 5px 50px 5px;
+        color: aliceblue;
+        background-color: hsl(171, 66%, 44%);
+    }
+
+    .description .blue {
+        margin: 20px 5px 20px 5px;
+        color: aliceblue;
+        background-color: hsl(233, 100%, 69%);
+    }
+
+
+}
