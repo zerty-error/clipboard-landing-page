@@ -334,7 +334,7 @@ footer .ajustement{
 
     header img{
         width: 100px;
-        height: 80px;
+        height: 100px;
     }
 
     header a{
@@ -496,7 +496,8 @@ footer .ajustement{
     }
 
     header img{
-        width: 100px;
+        width: 75px;
+        padding-top: 20px;
         height: 80px;
     }
 
@@ -701,7 +702,8 @@ footer .ajustement{
     }
 
     header img{
-        width: 100px;
+        width: 75px;
+        padding-top: 20px;
         height: 80px;
     }
 
